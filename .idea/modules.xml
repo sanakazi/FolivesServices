@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FolivesServices.iml" filepath="$PROJECT_DIR$/FolivesServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialTabsModule/MaterialTabsModule.iml" filepath="$PROJECT_DIR$/MaterialTabsModule/MaterialTabsModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com_facebook_android/com_facebook_android.iml" filepath="$PROJECT_DIR$/com_facebook_android/com_facebook_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/folivesServices/folivesServices.iml" filepath="$PROJECT_DIR$/folivesServices/folivesServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resideMenu/resideMenu.iml" filepath="$PROJECT_DIR$/resideMenu/resideMenu.iml" />
+    </modules>
+  </component>
+</project>

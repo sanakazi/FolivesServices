@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rtitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blue_triangle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Item"
+            android:textColor="@color/dark_orange"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rtitle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_corners">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/rounded_corners">
+
+                    <ImageView
+                        android:id="@+id/imgFoodImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/topbannner" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:orientation="vertical"
+                        android:background="@android:color/white">
+
+                        <RelativeLayout
+                            android:id = "@+id/lttslot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp">
+                            <LinearLayout
+                                android:id="@+id/rltimeSlot"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/itemname"/>
+                                <EditText
+                                    android:id="@+id/etItemName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Item Name"
+                                    android:layout_marginLeft="10dp"
+                                    android:background="@null"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+
+                                    />
+
+                            </LinearLayout>
+
+                            <Spinner
+                                android:paddingLeft="7dp"
+                                android:id="@+id/spTimeSlot"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Time Slot"
+                                android:layout_marginLeft="10dp"
+                                android:background="@null"
+                                android:drawableRight="@drawable/arrow_gray"
+                                android:spinnerMode="dialog"
+                                android:visibility="gone"
+                                />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray"
+                                android:layout_below="@+id/rltimeSlot"
+                                android:layout_marginTop="10dp"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/item_description"/>
+                                <EditText
+
+                                    android:id="@+id/etdesc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Item Description"
+                                    android:layout_marginLeft="12dp"
+                                    android:background="@null"
+                                    android:inputType="textMultiLine"
+                                    android:lines="3"
+                                    android:minLines="3"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_cusine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/cuisine"/>
+                                <TextView
+                                    android:id="@+id/txt_cuisine"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Cuisine"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="12dp"
+                                    android:background="@null"
+                                    android:textSize="15sp"
+                                    android:drawableRight="@drawable/arrow_gray"/>
+
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_veg_nonveg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/veg_nonveg"/>
+                                <TextView
+                                    android:id="@+id/txt_veg_nv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Veg/Nonveg/Egg"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="12dp"
+                                    android:background="@null"
+                                    android:drawableRight="@drawable/arrow_gray"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_itemtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/item_type"/>
+                                <TextView
+
+                                    android:id="@+id/txt_itemtype"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Item Type"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="12dp"
+                                    android:background="@null"
+                                    android:textSize="15sp"
+                                    android:drawableRight="@drawable/arrow_gray"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/rupee_withdrawls"/>
+                                <EditText
+
+                                    android:id="@+id/etPrice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Price"
+                                    android:layout_marginLeft="12dp"
+                                    android:background="@null"
+                                    android:inputType="number"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/gray"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/img_add_item"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="40dp"
+                            android:src="@drawable/but_update"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="185dp">
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
